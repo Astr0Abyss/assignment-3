@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio</title>
+    <link rel="icon" type="image/png" href="./assets/house-48.png" />
+    
+    <!-- Tailwind CSS and DaisyUI CDN Integration -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- fontawesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <!-- Google Font: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS Custom Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#d93c3d",
+              primary3: "#a9e85e",
+              dark: "#484848",
+              bgd: "#f3f3f3",
+              dark2: "#727272",
+              dib: "#212020",
+              dib2: "#1b1b1b",
+              bod: "1px solid rgb(232, 232, 232)",
+            },
+            fontFamily: {
+              manrope: "Manrope, sans-serif",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-manrope">
+    <!-- Header Section: Navbar and Banner -->
+    <header class="bg-gradient-to-b from-[#f3f3f3] to-[#ffffff]">
+      
+      <!-- Navbar Section -->
+      <nav class="w-11/12 mx-auto py-4 md:py-6">
+        <div class="navbar">
+          <div class="navbar-start">
+            <!-- Logo and Branding -->
+            <a class="text-xl flex gap-1 cursor-pointer">
+              <i
+                class="fa-regular fa-arrow-up-right bg-primary3 py-[4px] px-[7px] text-black rounded-full"
+              ></i>
+              <h3
+                class="text-[28px] lg:text-[32px] font-extrabold tracking-tight text-dib"
+              >
+                Rinterio
+              </h3>
+            </a>
+          </div>
+          <!-- Navbar Links for Desktop -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="flex gap-6 cursor-pointer text-[#727272]">
+              <li>
+                <a
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Navbar End: Search, Cart, and Button -->
+          <div class="navbar-end space-x-3">
+            <div class="space-x-2 hidden md:flex items-center">
+              <!-- Search Icon -->
+              <i class="fa-solid fa-magnifying-glass py-[7px] px-[10px] rounded-full border-[1px solid rgb(232, 232, 232)] bg-[#ffffff] shadow text-[#727272] cursor-pointer hover:text-black"></i>
+              <!-- Cart Icon -->
+              <i class="fa-solid fa-cart-shopping py-[7px] px-[10px] rounded-full bg-[#ffffff] border-[1px solid rgb(232, 232, 232)] shadow text-[#727272] cursor-pointer hover:text-black"></i>                
+              <!-- Book Consult Button -->
+              <button
+                class="btn font-extrabold bg-primary3 rounded-full hover:bg-[#88ff00] text-dib2 text-xl tracking-tight"
+              >
+                Book Consult
+                <i
+                  class="fa-regular fa-arrow-up-right bg-dib py-[4px] px-[9px] text-white rounded-full text-sm"
+                ></i>
+              </button>
+            </div>
+            <!-- Mobile Navbar: Hamburger Menu -->
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i
+                  class="fa-solid fa-bars text-xl text-[#838383] bg-[#ffffff] py-2 px-[14px] rounded-full border-[1px solid rgb(232, 232, 232)]"
+                ></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content right-0 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li>
+                  <a
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
+                    >Service</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
+                    >Blogs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Banner Section -->
+      <section
+        class="flex flex-col w-11/12 mx-auto text-center justify-center space-y-4 md:mt-12 md:mb-20 mb-12"
+      >
+        <!-- Banner image -->
+        <img
+          class="w-8/12 md:w-6/12 mx-auto"
+          src="./assets/banner.png"
+          alt=""
+        />
+        <!-- Banner Heading -->
+        <h1
+          class="text-[28px] md:text-[36px] lg:text-[56px] xl:text-[64px] font-extrabold tracking-tight text-[#212121]"
+        >
+          A barn house of this design has a striking appearance
+        </h1>
+        <p class="text-dark sm:text-base text-sm md:w-9/12 mx-auto md:text-lg md:leading-relaxed lg:leading-loose">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and
+          large windows that flood the space with natural light.
+        </p>
+        <!-- Banner Button -->
+        <div>
+          <button
+            class="md:py-3 md:px-5 py-2 px-4 bg-[#d8f99d] hover:bg-primary3 rounded-full font-extrabold"
+          >
+            View Details
+            <i
+              class="fa-regular fa-arrow-up-right bg-primary3 py-[4px] px-[6px] text-black rounded-full"
+            ></i>
+          </button>
+        </div>
+      </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        
+    </footer>
+  </body>
+</html>
